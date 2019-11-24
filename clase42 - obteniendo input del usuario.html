@@ -105,6 +105,7 @@
         }
 
         inicializar() {
+            this.elegirColor = this.elegirColor.bind(this)
           btnEmpezar.classList.add('hide')
           this.nivel =1
           this.colores ={
@@ -147,9 +148,7 @@
             this.colores[color].classList.add('light')
             setTimeout (() =>this.apagarColor(color), 350)
 
-        }  
-
-        apagarColor(color){
+        }  apagarColor(color){
             this.colores[color].classList.remove('light')
         }
 
@@ -161,7 +160,7 @@
         }
         
         elegirColor(ev){
-            console.log(ev)
+            console.log(this)
         }
 
       }
