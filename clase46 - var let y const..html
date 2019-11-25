@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sacha={
+            nombre: 'Sacha',
+            apellido: 'Cardona',
+            edad: 28
+        }
+
+
+            // function esMayorDeEdad (persona){
+
+            //     var mensaje,mensaje2
+            //     if (persona.edad >= 18){
+            //         mensaje = 'Es mayor de edad'
+            //     }else{
+            //          mensaje = 'Es meno de edad'
+            //          mensaje2 = 'Este es otro mensaje'
+            //     }
+            //     console.log(mensaje)
+            //     console.log(mensaje2)
+            // }
+
+
+
+        //     function esMayorDeEdad (persona){
+                
+        //         if (persona.edad >= 18){                //let solo funciona dentro de las llaves
+        //             let mensaje = 'Es mayor de edad'    //cuando termina la llave y no funciona
+        //         }else{                                   //esta parte no se realizaria   
+        //            let mensaje = 'Es meno de edad'      
+                   
+        //         }
+        //         console.log(mensaje)
+                
+        // }
+
+
+
+        function esMayorDeEdad (persona){
+
+            const MAYORIA_DE_EDAD = 18
+                let mensaje
+                if (persona.edad >= MAYORIA_DE_EDAD){                //let solo funciona dentro de las llaves
+                    mensaje = 'Es mayor de edad'    //cuando termina la llave y no funciona
+                }else{                                   //esta parte no se realizaria   
+                    mensaje = 'Es meno de edad'      
+                   
+                }
+                console.log(mensaje)
+                
+        }    
+
+        esMayorDeEdad(sacha)
+
+
+            for (var i =0; i <10 ; i++){
+                console.log(i)
+            }
+
+              console.log(`Termino el for,el valor de i es ${i}`)  
+
+    </script>
+</body>
+</html>
